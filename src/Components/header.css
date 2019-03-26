@@ -1,0 +1,15 @@
+#header {
+    background-color: red;
+    color: white
+}
+
+.align_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.jumbotron {
+    background-image: url("../Resources/journey_splash.png");
+    padding: 20px;
+}
