@@ -8,7 +8,6 @@ export default class Top extends React.Component {
         return (
             <div>
                 <Image src={dbs_top} fluid/>
-            </div>
-        )
+            </div>        )
     }
 }

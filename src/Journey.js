@@ -1,6 +1,6 @@
 import React from 'react';
 import Comp1 from './Components/comp1.js';
-import {Row,Container,Button,Col} from 'react-bootstrap';
+import {Row,Container,Col} from 'react-bootstrap';
 import axios from "axios";
 import "./Journey.css"
 import Example from "./chart"
@@ -49,7 +49,7 @@ export default class Home extends React.Component {
 
                 <Container>
                     <div className="m-5 p-5 whiteBox">
-                        <h1>Hi! Here's a comparison of your finances to other people your age in this month!</h1>
+                        <h1>Here's a breakdown of your finances to other people your age in this month!</h1>
                         <div className="mt-5">
                             <AvgSpending/>
                         </div>
