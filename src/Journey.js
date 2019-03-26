@@ -2,27 +2,24 @@ import React from 'react';
 import Comp1 from './Components/comp1.js';
 import {Row,Container,Button,Col} from 'react-bootstrap';
 import axios from "axios";
+import "./Journey.css"
 
 // Some APIs need a key, uncomment and find out syntax to add >>> something like &appid=${API_key}
 // const API_key= "something"
 
 export default class Home extends React.Component {
     state={ data:[
-            {id:1, name:"tom",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
-            {id:2, name:"tom",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
-            {id:3, name:"tom",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}}
+            {id:1, name:"Tranport",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
+            {id:2, name:"Dining",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
+            {id:3, name:"Living",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}}
         ] };
 
-
-    // getApi = async () =>{
-    //     const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-    //     // a response consists of multiple parts! make sure to unpack the needed value
-    //     this.setState({data: response.data});
-    //     console.log(this.state.data)
-    // };
-
-
-
+    getApi = async () =>{
+        const response = await axios.get("http://localhost:5000");
+        // a response consists of multiple parts! make sure to unpack the needed value
+        this.setState({finance: response.data});
+        console.log(this.state.finance)
+    };
 
     render() {
         let Comp1s = this.state.data.map(person => {
@@ -35,6 +32,9 @@ export default class Home extends React.Component {
         return (
             <div>
                 <Container>
+                    <div className="m-5 p-5 whiteBox">
+                        <h1>Hi! Here's what you are spending the most on!</h1>
+                    </div>
                     <Row className="m-3">
                         {Comp1s}
                     </Row>
