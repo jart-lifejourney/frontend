@@ -4,6 +4,7 @@ import {Row,Container,Button,Col} from 'react-bootstrap';
 import axios from "axios";
 import "./Journey.css"
 import Example from "./chart"
+import AvgSpending from "./avgSpendingMonth"
 
 // Some APIs need a key, uncomment and find out syntax to add >>> something like &appid=${API_key}
 // const API_key= "something"
@@ -31,6 +32,7 @@ export default class Home extends React.Component {
                 </Col>
             )
         });
+
         return (
             <div>
                 <Container>
@@ -41,13 +43,26 @@ export default class Home extends React.Component {
                         </div>
                     </div>
                     <div className="m-5 p-5 whiteBox">
-                        <h1>You spend the most on these categories, check them out maybe?</h1>
+                        <h1>You spent more on transport compared to your age group, do you want to set a budget?</h1>
+                    </div>
+                </Container>
+
+                <Container>
+                    <div className="m-5 p-5 whiteBox">
+                        <h1>Hi! Here's a comparison of your finances to other people your age!</h1>
+                        <div className="mt-5">
+                            <AvgSpending/>
+                        </div>
+                    </div>
+                    <div className="m-5 p-5 whiteBox">
+                        <h1>You've transferred more compared to your age group, use cashless payment to better track your expenditure!</h1>
                     </div>
                     <Row className="m-3">
                         {Comp1s}
                     </Row>
                 </Container>
             </div>
+
         );
     }
 }

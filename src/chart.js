@@ -5,25 +5,16 @@ import {
 
 const data = [
     {
-        name: 'Oct 2018', Average: 4000, Yours: 2400, amt: 2400,
+        name: 'F&B 2018', Average: 1000, Yours: 2199.7000000000003,
     },
     {
-        name: 'Nov 2018', Average: 3000, Yours: 1398, amt: 2210,
+        name: 'Transport 2018', Average: 960, Yours: 10732.540000000008, amt: 10732,
     },
     {
-        name: 'Dec 2018', Average: 2000, Yours: 9800, amt: 2290,
+        name: 'Transfer 2018', Average: 2000, Yours: 10732, amt: 10732,
     },
     {
-        name: 'Jan 2019', Average: 2780, Yours: 3908, amt: 2000,
-    },
-    {
-        name: 'Feb 2019', Average: 1890, Yours: 4800, amt: 2181,
-    },
-    {
-        name: 'Mar 2019', Average: 2390, Yours: 3800, amt: 2500,
-    },
-    {
-        name: 'April 2019', Average: 3490, Yours: 4300, amt: 2100,
+        name: 'ATM 2018', Average: 3000, Yours: 2700, amt: 2700,
     },
 ];
 
