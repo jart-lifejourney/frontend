@@ -37,7 +37,7 @@ export default class Home extends React.Component {
             <div>
                 <Container>
                     <div className="m-5 p-5 whiteBox">
-                        <h1>Hi! Here's a comparison of your finances to other people your age!</h1>
+                        <h1>Hi! Here's a comparison of your finances to other people your age in this year!</h1>
                         <div className="mt-5">
                         <Example/>
                         </div>
@@ -49,7 +49,7 @@ export default class Home extends React.Component {
 
                 <Container>
                     <div className="m-5 p-5 whiteBox">
-                        <h1>Hi! Here's a comparison of your finances to other people your age!</h1>
+                        <h1>Hi! Here's a comparison of your finances to other people your age in this month!</h1>
                         <div className="mt-5">
                             <AvgSpending/>
                         </div>
