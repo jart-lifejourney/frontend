@@ -1,28 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Components/header.js'
+import Comp1 from './Components/comp1.js';
+import {Row,Container} from 'react-bootstrap';
+import axios from "axios";
+import MyForm from './Components/MyForm';
 
-class App extends Component {
+// Some APIs need a key, uncomment and find out syntax to add >>> something like &appid=${API_key}
+// const API_key= "something"
+
+export default class Home extends React.Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+          <Container>
+          <Header/>
+          </Container>
       </div>
+
     );
   }
 }
-
-export default App;
