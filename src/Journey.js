@@ -40,6 +40,9 @@ export default class Home extends React.Component {
                         <Example/>
                         </div>
                     </div>
+                    <div className="m-5 p-5 whiteBox">
+                        <h1>You spend the most on these categories, check them out maybe?</h1>
+                    </div>
                     <Row className="m-3">
                         {Comp1s}
                     </Row>
