@@ -10,9 +10,9 @@ import Example from "./chart"
 
 export default class Home extends React.Component {
     state={ data2:[
-            {id:1, name:"Tranport",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
-            {id:2, name:"Dining",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}},
-            {id:3, name:"Living",imgsrc:"https://image.shutterstock.com/image-vector/cartoon-car-logo-flat-cute-450w-212950204.jpg",company:{bs:"h",catchPhrase:"try"}}
+            {id:1, name:"Transport",imgsrc:"https://superawesomevectors.com/wp-content/uploads/2016/04/sedan-vehicle-flat-vector-icon-800x566.jpg",desc:"You can save more than 22% on your transportation expenses!"},
+            {id:2, name:"Dining",imgsrc:"https://superawesomevectors.com/wp-content/uploads/2016/09/popcorn-flat-vector-icon-800x566.jpg",desc:"You can save more than 33% on your eating expenses!"},
+            {id:3, name:"Living",imgsrc:"https://superawesomevectors.com/wp-content/uploads/2017/07/piano-keys-flat-vector-icon-800x566.jpg",desc:"You can save more than 44% on your living expenses!"}
         ] };
 
 
@@ -27,7 +27,7 @@ export default class Home extends React.Component {
         let Comp1s = this.state.data2.map(person => {
             return(
                 <Col className="col-4">
-                <Comp1 name={person.name} key={person.id} extra={person.company.bs} extra2={person.company.catchPhrase} image={person.imgsrc}/>
+                <Comp1 name={person.name} key={person.id} extra={person.desc} image={person.imgsrc}/>
                 </Col>
             )
         });

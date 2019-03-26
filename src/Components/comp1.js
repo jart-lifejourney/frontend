@@ -10,7 +10,7 @@ class Comp1 extends Component {
                 <Card style={{ width: '20rem' }}>
                 <Card.Img variant="top" src={this.props.image}/>
                 <Card.Body>
-                <Card.Title>{this.props.name}</Card.Title>
+                <Card.Title><h1>{this.props.name}</h1></Card.Title>
                 <Card.Text>{this.props.extra}</Card.Text>
                 <Button variant="primary" href={"/carplan"}>Take a Look</Button>
                 </Card.Body>
